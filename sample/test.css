@@ -1,0 +1,24 @@
+/* TEST */
+
+.success {
+  background: #00bc80;
+  color: rgb(255, 255, 255);
+}
+
+.danger #pre {
+  background: #ff7dab;
+  color: rgb(0, 0, 0);
+  val: 🔥 🔥 WATCH OUT;
+}
+
+.primary #pre {
+  background: rgb(0, 115, 216);
+  color: rgb(255, 255, 255);
+  val: 🌈 HEY;
+}
+
+.info #pre {
+  background: rgba(0, 170, 189, 0.612);
+  color: rgb(255, 255, 255);
+  val: ⭐️ __NOTE__ ⭐️;
+}
