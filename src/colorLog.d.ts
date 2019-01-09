@@ -20,7 +20,7 @@ export declare enum Colors {
   BrightWhite = '255;251;246'
 }
 
-export declare type ColorLogMember =
+declare type ColorLogMember =
   | 'log'
   | 'pri'
   | 'sec'
@@ -100,3 +100,5 @@ export declare class ColorLog implements ColorLogMembers {
     }
   }
 }
+
+export default ColorLog

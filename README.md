@@ -28,7 +28,7 @@ clg.pri('But I wanna more pretty log')
 ### TypeScript
 
 ```ts
-import { ColorLog } from 'colorlog-css'
+import ColorLog from 'colorlog-css'
 
 const clg = new ColorLog('./MyColors.css') // or new ColorLog()
 clg.list()
@@ -90,7 +90,7 @@ Make a CSS file for customizing your own color :)
 ```
 
 ```ts
-import { ColorLog } from 'colorlog-css'
+import ColorLog from 'colorlog-css'
 
 const clg = new ColorLog('./sample.css')
 clg.list()
@@ -99,7 +99,7 @@ clg.list()
 or programmatically,
 
 ```ts
-import { ColorLog, Colors } from 'colorlog-css'
+import ColorLog, { Colors } from 'colorlog-css'
 
 const clg = new ColorLog()
 

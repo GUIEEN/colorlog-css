@@ -1,12 +1,11 @@
 {
   "name": "colorlog-css",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "🌈 Colorize ugly console.log with your css !",
   "main": "build/colorLog.js",
   "types": "src/colorLog.d.ts",
   "scripts": {
-    "build": "tsc",
-    "prebuild": "rm -rf ./build"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
