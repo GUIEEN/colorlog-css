@@ -40,7 +40,7 @@ interface ColorLogMembers {
   end(): void
 }
 
-export class ColorLog implements ColorLogMembers {
+export declare class ColorLog implements ColorLogMembers {
   /**
    * Declare path of CSS file if you want to initialize the colors with your css file.
    * @param path
