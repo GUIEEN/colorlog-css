@@ -1,6 +1,6 @@
 {
   "name": "colorlog-css",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "🌈 Colorize ugly console.log with your css !",
   "main": "build/colorLog.js",
   "types": "src/colorLog.d.ts",
