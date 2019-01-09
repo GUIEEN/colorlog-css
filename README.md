@@ -116,7 +116,7 @@ clg.danger('danger')
 
 Output will look like this ✨
 
-![](noteImages/2019-01-10-02-11-36.png)
+![](sample__view.png)
 
 ## TODO...
 
