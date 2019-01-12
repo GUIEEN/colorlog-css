@@ -2,8 +2,8 @@
 
 🌈 Colorize your ugly console.log with your css !
 
-![](sample.png)
-![](sample__prefix.png)
+![](https://gist.github.com/GUIEEN/4983b788d10a46a34e2deb4dd4435437/raw/b10daa203bd414714f926fb60f08c65f4a1c4e7d/colorlog.png)
+![](https://gist.github.com/GUIEEN/4983b788d10a46a34e2deb4dd4435437/raw/b10daa203bd414714f926fb60f08c65f4a1c4e7d/colorlog__prefix.png)
 
 ## Installation
 
@@ -116,7 +116,7 @@ clg.danger('danger')
 
 Output will look like this ✨
 
-![](sample__view.png)
+![](https://gist.github.com/GUIEEN/4983b788d10a46a34e2deb4dd4435437/raw/b10daa203bd414714f926fb60f08c65f4a1c4e7d/colorlog__view.png)
 
 ## TODO...
 
