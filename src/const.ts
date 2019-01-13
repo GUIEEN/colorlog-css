@@ -1,5 +1,5 @@
 /**
- * Default Style of 4-bit ColoursSet. (https://en.wikipedia.org/wiki/ANSI_escape_code#Colors)
+ * Default Style of 3/4 bit ColoursSet. (https://en.wikipedia.org/wiki/ANSI_escape_code#Colors)
  */
 export enum Style {
   // Style

@@ -1,9 +1,9 @@
 # colorlog-css
 
-🌈 Colorize your ugly console.log with your css !
+🌈 **Colorize** your ~~_ugly_~~ console.log with **198 Schemes** and **your CSS** !
 
-![](https://gist.github.com/GUIEEN/4983b788d10a46a34e2deb4dd4435437/raw/b10daa203bd414714f926fb60f08c65f4a1c4e7d/colorlog.png)
-![](https://gist.github.com/GUIEEN/4983b788d10a46a34e2deb4dd4435437/raw/b10daa203bd414714f926fb60f08c65f4a1c4e7d/colorlog__prefix.png)
+![](https://gist.githubusercontent.com/GUIEEN/4983b788d10a46a34e2deb4dd4435437/raw/7651b0816d6106ab43a1f35c32bbbfef343540d7/Styles.png)
+![](https://gist.githubusercontent.com/GUIEEN/4983b788d10a46a34e2deb4dd4435437/raw/7651b0816d6106ab43a1f35c32bbbfef343540d7/Schemes.png)
 
 ## Installation
 
@@ -19,8 +19,9 @@ yarn add colorlog-css
 ```js
 var colorLog = require('colorlog-css')
 var clg = new colorLog.ColorLog('./MyColors.css')
+// var clg = new colorLog.ColorLog()
+// clg.set('./MyColors.css')
 
-clg.list()
 clg.log('I want a default color')
 clg.pri('But I wanna more pretty log')
 ```
@@ -30,7 +31,10 @@ clg.pri('But I wanna more pretty log')
 ```ts
 import ColorLog from 'colorlog-css'
 
-const clg = new ColorLog('./MyColors.css') // or new ColorLog()
+const clg = new ColorLog('./MyColors.css')
+// const clg = new ColorLog()
+// clg.set('./MyColors.css')
+
 clg.list()
 clg.suc('cess :)')
 clg
@@ -45,12 +49,23 @@ clg
   .end()
 ```
 
+There are already **198 schemes** based on the [iterm-scheme list](https://github.com/mbadolato/iTerm2-Color-Schemes) and [3/4 bit default style](https://en.wikipedia.org/wiki/ANSI_escape_code#Colors). You can easily modify your color with these predefined colors and your CSS.
+
+```ts
+clg.list() // Will show the default 3/4 bit style list.
+clg.listScheme() // List schemes with methods of scheme applied.
+
+import { Schemes } from 'colorlog-css'
+// Schemes will applied to the methods 🕶
+clg.setScheme(Schemes.Batman)
+```
+
 ## How to change color ?
 
 Make a CSS file for customizing your own color :)
 
 - Selectors
-  - Class Format
+  - Class Format ( Each selector will represent method's color)
     - `.primary`
     - `.secondary`
     - `.success`
@@ -60,14 +75,38 @@ Make a CSS file for customizing your own color :)
     - `.default`
   - Id Format
     - `#pre`
-      - `val` property represent the value of prefix
+      - `val` ( property represent the value of prefix )
 
 ```css
-/* Sample */
+/* SAMPLE */
 
 .success {
   background: #00bc80;
   color: rgb(255, 255, 255);
+}
+
+/* .default #pre {
+  background: null;
+  color: #ffffff;
+  val: *Default*;
+} */
+
+.primary #pre {
+  background: rgb(0, 115, 216);
+  color: rgb(255, 255, 255);
+  val: 🌈 HEY;
+}
+
+.secondary #pre {
+  background: #514636;
+  color: rgb(235, 244, 255);
+  val: ☕️ Hmm..;
+}
+
+.success #pre {
+  background: #58ff82;
+  color: rgb(33, 33, 33);
+  val: ✅ Great !;
 }
 
 .danger #pre {
@@ -76,10 +115,10 @@ Make a CSS file for customizing your own color :)
   val: 🔥 🔥 WATCH OUT;
 }
 
-.primary #pre {
-  background: rgb(0, 115, 216);
-  color: rgb(255, 255, 255);
-  val: 🌈 HEY;
+.warning #pre {
+  background: #ffdc2e;
+  color: rgb(0, 0, 0);
+  val: 💩 Shit;
 }
 
 .info #pre {
@@ -92,8 +131,17 @@ Make a CSS file for customizing your own color :)
 ```ts
 import ColorLog from 'colorlog-css'
 
-const clg = new ColorLog('./sample.css')
-clg.list()
+const clg = new ColorLog('./MyColors.css')
+clg
+  .join()
+  .log('log')
+  .pri('pri')
+  .sec('sec')
+  .suc('suc')
+  .danger('danger')
+  .warn('warn')
+  .info('info')
+  .end()
 ```
 
 or programmatically,
@@ -101,26 +149,32 @@ or programmatically,
 ```ts
 import ColorLog, { Colors } from 'colorlog-css'
 
-const clg = new ColorLog()
+const clg = new ColorLog('./MyColors.css')
 
 clg.info('You can change the color like this', '\n\n')
 
 clg.danger('danger')
-clg.categories.danger.color = clg.makeForm(null, clg.gen('rgb(90, 115, 216)'))
+clg.categories.danger.color = clg.makeForm(null, '#ff4757')
+
+// Apply styles and colors
+clg.danger('danger')
 clg.categories.danger.color = clg.makeForm(
-  Colors.BrightGreen,
-  clg.gen('rgb(90, 115, 216)')
+  [Colors.Magenta, Style.Italic, Style.Bold],
+  '#7bed9f'
 )
+
 clg.danger('danger')
 ```
 
 Output will look like this ✨
 
-![](https://gist.github.com/GUIEEN/4983b788d10a46a34e2deb4dd4435437/raw/b10daa203bd414714f926fb60f08c65f4a1c4e7d/colorlog__view.png)
+![](https://gist.githubusercontent.com/GUIEEN/4983b788d10a46a34e2deb4dd4435437/raw/7651b0816d6106ab43a1f35c32bbbfef343540d7/ChangeColor.png)
 
 ## TODO...
 
-- [ ] Make it available to customize default color set.
-- [ ] Any ideas ? 😄
+- [x] Make it available to customize default color set.
+  - [x] Customize it with schemes / inputing the value directly.
+- [x] Change font styles with `string` or `string[]` types
+- [ ] Any ideas? 😄
 
 Any questions or suggestions are always welcome 🍀
