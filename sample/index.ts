@@ -1,6 +1,6 @@
 import ColorLog, { Colors, Style } from '../src/index'
 
-const clg = new ColorLog('')
+const clg = new ColorLog()
 
 clg.list()
 
