@@ -163,15 +163,16 @@ const clg = new ColorLog('./MyColors.css')
 clg.info('You can change the color like this', '\n\n')
 
 clg.danger('danger')
+
+// Apply only background
 clg.categories.danger.color = clg.makeForm(null, '#ff4757')
+clg.danger('danger')
 
 // Apply styles and colors
-clg.danger('danger')
 clg.categories.danger.color = clg.makeForm(
   [Colors.Magenta, Style.Italic, Style.Bold],
   '#7bed9f'
 )
-
 clg.danger('danger')
 ```
 
