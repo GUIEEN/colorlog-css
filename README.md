@@ -156,7 +156,7 @@ clg
 or programmatically,
 
 ```ts
-import ColorLog, { Colors } from 'colorlog-css'
+import ColorLog, { Colors, Style } from 'colorlog-css'
 
 const clg = new ColorLog('./MyColors.css')
 

@@ -1,6 +1,6 @@
 {
   "name": "colorlog-css",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "🌈 Colorize ugly console.log with your css !",
   "author": "Seungyong Kwak <guieenoutis@gmail.com>",
   "license": "MIT",
