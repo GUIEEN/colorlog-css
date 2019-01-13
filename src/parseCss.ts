@@ -14,14 +14,6 @@ let format = {
   isComment = false,
   result = {}
 
-type selector =
-  | 'primary'
-  | 'secondary'
-  | 'success'
-  | 'danger'
-  | 'warning'
-  | 'info'
-
 interface ParsedCss {
   [selector: string]: {
     color: string
