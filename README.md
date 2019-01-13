@@ -49,6 +49,8 @@ clg
   .end()
 ```
 
+![](https://gist.githubusercontent.com/GUIEEN/4983b788d10a46a34e2deb4dd4435437/raw/7651b0816d6106ab43a1f35c32bbbfef343540d7/ChangeColor.png)
+
 There are already **198 schemes** based on the [iterm-scheme list](https://github.com/mbadolato/iTerm2-Color-Schemes) and [3/4 bit default style](https://en.wikipedia.org/wiki/ANSI_escape_code#Colors). You can easily modify your color with these predefined colors and your CSS.
 
 ```ts
