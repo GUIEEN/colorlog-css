@@ -1,6 +1,13 @@
+<div align="center">
+
 # colorlog-css
 
+[![npm version](https://badge.fury.io/js/colorlog-css.svg)](https://badge.fury.io/js/colorlog-css)
+[![LICENSE](https://img.shields.io/github/license/GUIEEN/colorlog-css.svg)](https://github.com/GUIEEN/colorlog-css/blob/master/LICENSE)
+
 🌈 **Colorize** your ~~_ugly_~~ console.log with **198 Schemes** and **your CSS** !
+
+</div>
 
 ![](https://gist.githubusercontent.com/GUIEEN/4983b788d10a46a34e2deb4dd4435437/raw/7651b0816d6106ab43a1f35c32bbbfef343540d7/Styles.png)
 ![](https://gist.githubusercontent.com/GUIEEN/4983b788d10a46a34e2deb4dd4435437/raw/7651b0816d6106ab43a1f35c32bbbfef343540d7/Schemes.png)
