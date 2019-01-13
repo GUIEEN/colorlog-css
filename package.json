@@ -1,18 +1,19 @@
 {
   "name": "colorlog-css",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "🌈 Colorize ugly console.log with your css !",
-  "main": "build/colorLog.js",
-  "types": "src/colorLog.d.ts",
+  "author": "Seungyong Kwak <guieenoutis@gmail.com>",
+  "license": "MIT",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "prettier": "find schemes | xargs prettier --write"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/GUIEEN/colorlog-css"
   },
-  "author": "Seungyong Kwak <guieenoutis@gmail.com>",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/GUIEEN/colorlog-css/issues"
   },
