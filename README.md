@@ -25,8 +25,8 @@ yarn add colorlog-css
 
 ```js
 var colorLog = require('colorlog-css')
-var clg = new colorLog.ColorLog('./MyColors.css')
-// var clg = new colorLog.ColorLog()
+var clg = new colorLog.default('./MyColors.css')
+// var clg = new colorLog.default()
 // clg.set('./MyColors.css')
 
 clg.log('I want a default color')
