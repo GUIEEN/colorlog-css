@@ -5,16 +5,40 @@
   color: rgb(255, 255, 255);
 }
 
+/* .default #pre {
+  background: null;
+  color: #ffffff;
+  val: *Default*;
+} */
+
+.primary #pre {
+  background: rgb(0, 115, 216);
+  color: rgb(255, 255, 255);
+  val: 🌈 HEY;
+}
+
+.secondary #pre {
+  background: #514636;
+  color: rgb(235, 244, 255);
+  val: ☕️ Hmm..;
+}
+
+.success #pre {
+  background: #58ff82;
+  color: rgb(33, 33, 33);
+  val: ✅ Great !;
+}
+
 .danger #pre {
   background: #ff7dab;
   color: rgb(0, 0, 0);
   val: 🔥 🔥 WATCH OUT;
 }
 
-.primary #pre {
-  background: rgb(0, 115, 216);
-  color: rgb(255, 255, 255);
-  val: 🌈 HEY;
+.warning #pre {
+  background: #ffdc2e;
+  color: rgb(0, 0, 0);
+  val: 💩 Shit;
 }
 
 .info #pre {
