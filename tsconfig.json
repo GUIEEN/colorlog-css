@@ -14,7 +14,7 @@
     "sourceMap": true,
     "skipLibCheck": true,
     "baseUrl": ".",
-    "declaration": false,
+    "declaration": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "typeRoots": ["../node_modules/@types"],
@@ -22,5 +22,6 @@
     "outDir": "build/",
     "types": ["node"]
   },
-  "include": ["src/**/*.ts", "node_modules/@types"]
+  "include": ["src/**/*.ts", "node_modules/@types"],
+  "exclude": ["node_modules", "build"]
 }
